@@ -1,0 +1,92 @@
+[
+  {
+    "topic": "Introduction to NLP",
+    "summary": "Natural Language Processing (NLP) is a field of AI that enables computers to work with human language. Common applications include translation, chatbots, sentiment analysis, summarization, and text classification.",
+    "keywords": ["NLP", "natural language processing", "language", "applications", "text"]
+  },
+  {
+    "topic": "Text Preprocessing",
+    "summary": "Text preprocessing prepares raw language for analysis. Typical steps include tokenization, normalization, lowercasing, stop-word removal, stemming, and lemmatization. The steps chosen depend on the downstream task.",
+    "keywords": ["preprocessing", "tokenization", "normalization", "stop words", "stemming", "lemmatization"]
+  },
+  {
+    "topic": "Bag of Words",
+    "summary": "Bag of Words (BoW) represents a document by counting vocabulary terms. It is simple and useful for baseline classifiers, but it ignores word order and most context.",
+    "keywords": ["BoW", "bag of words", "count vector", "document representation", "frequency"]
+  },
+  {
+    "topic": "TF-IDF",
+    "summary": "Term Frequency-Inverse Document Frequency (TF-IDF) assigns larger weights to terms that occur frequently in a document but are relatively rare across documents. It is often used for search, document comparison, and text classification.",
+    "keywords": ["TF-IDF", "term frequency", "inverse document frequency", "search", "weight"]
+  },
+  {
+    "topic": "Cosine Similarity",
+    "summary": "Cosine similarity measures the cosine of the angle between two vectors. In text retrieval, a larger cosine similarity usually means that a query and document share a more similar TF-IDF representation.",
+    "keywords": ["cosine similarity", "vector", "angle", "document similarity", "retrieval"]
+  },
+  {
+    "topic": "Word Embeddings",
+    "summary": "Word embeddings map words or tokens to dense numerical vectors. Word2Vec and GloVe learn static representations, while contextual models such as BERT produce representations that depend on surrounding words.",
+    "keywords": ["embedding", "Word2Vec", "GloVe", "dense vectors", "contextual"]
+  },
+  {
+    "topic": "Recurrent Neural Networks",
+    "summary": "Recurrent Neural Networks (RNNs) process sequences by updating a hidden state over time. They can model text sequences but often struggle to preserve information across long distances because of vanishing or exploding gradients.",
+    "keywords": ["RNN", "recurrent neural network", "hidden state", "sequences", "vanishing gradients"]
+  },
+  {
+    "topic": "LSTM and GRU",
+    "summary": "Long Short-Term Memory (LSTM) networks and Gated Recurrent Units (GRUs) are gated RNN architectures. Their gates help control what information is kept or forgotten, improving the modeling of longer dependencies.",
+    "keywords": ["LSTM", "GRU", "gates", "long-term dependencies", "memory cell"]
+  },
+  {
+    "topic": "Sequence-to-Sequence Models",
+    "summary": "Sequence-to-sequence models transform an input sequence into an output sequence. Encoder-decoder models are widely used for machine translation, text summarization, and other generation tasks, often with an attention mechanism.",
+    "keywords": ["seq2seq", "encoder decoder", "machine translation", "generation", "attention"]
+  },
+  {
+    "topic": "Attention and Self-Attention",
+    "summary": "Attention allows a model to focus on relevant tokens when producing a representation or prediction. Self-attention computes relationships among positions within the same sequence and is a central component of transformers.",
+    "keywords": ["attention", "self-attention", "query key value", "token relations", "QKV"]
+  },
+  {
+    "topic": "Transformers",
+    "summary": "Transformers use attention mechanisms and feed-forward layers to model sequences without recurrence. Their architecture supports parallel processing during training and underlies modern models such as BERT, BART, and GPT.",
+    "keywords": ["transformer", "multi-head attention", "positional encoding", "encoder", "decoder"]
+  },
+  {
+    "topic": "BERT",
+    "summary": "BERT (Bidirectional Encoder Representations from Transformers) is an encoder-only transformer pretrained with masked language modeling. It uses bidirectional context and is commonly fine-tuned for classification, named entity recognition, and question answering.",
+    "keywords": ["BERT", "bidirectional", "encoder-only", "masked language model", "classification"]
+  },
+  {
+    "topic": "BART",
+    "summary": "BART is an encoder-decoder transformer trained to reconstruct corrupted text. It combines a bidirectional encoder with an autoregressive decoder and is useful for summarization, generation, and text correction.",
+    "keywords": ["BART", "encoder-decoder", "denoising", "summarization", "autoregressive"]
+  },
+  {
+    "topic": "Large Language Models",
+    "summary": "Large language models (LLMs) are pretrained on large text corpora to predict or generate tokens. They can answer questions, summarize, and generate text; their responses may still be inaccurate without suitable context or verification.",
+    "keywords": ["LLM", "GPT", "prompt", "language model", "generation", "tokens"]
+  },
+  {
+    "topic": "Named Entity Recognition",
+    "summary": "Named Entity Recognition (NER) identifies and categorizes mentions such as people, organizations, locations, and dates in text. It is a token-level information extraction task.",
+    "keywords": ["NER", "named entity recognition", "entity", "people", "location", "organization"]
+  },
+  {
+    "topic": "Sentiment Analysis",
+    "summary": "Sentiment analysis estimates whether text expresses positive, negative, or neutral sentiment. Common approaches include TF-IDF-based classifiers and fine-tuned transformer models.",
+    "keywords": ["sentiment", "positive", "negative", "neutral", "opinion classification"]
+  },
+  {
+    "topic": "NLP Evaluation",
+    "summary": "NLP evaluation depends on the task. Accuracy and F1 are common for classification; precision and recall help with information extraction; BLEU and ROUGE are reference-based metrics for translation and summarization, with important limitations.",
+    "keywords": ["evaluation", "precision", "recall", "F1", "accuracy", "BLEU", "ROUGE"]
+  },
+  {
+    "topic": "Retrieval-Augmented Generation",
+    "summary": "Retrieval-Augmented Generation (RAG) retrieves relevant knowledge before asking an LLM to answer. A retriever scores documents against the question, selects useful passages, and supplies them as context so answers can be grounded in the knowledge base.",
+    "keywords": ["RAG", "retrieval augmented generation", "retriever", "context", "grounding", "top k"]
+  }
+]
