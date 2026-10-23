@@ -1,4 +1,4 @@
-# NLP Course RAG Chatbot (Groq GPT-OSS 120B)
+# Simple RAG Chatbot (Groq GPT-OSS 120B)
 
 A **minimal Retrieval-Augmented Generation (RAG)** chatbot for NLP course notes. It searches topic summaries in a local JSON file using **TF-IDF + cosine similarity**, then asks **Groq's `openai/gpt-oss-120b`** model to answer using the retrieved context. The chat UI uses **Gradio**.
 
